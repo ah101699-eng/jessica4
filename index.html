@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪愛延續 - 攝影紀錄</title>
+    <style>
+        :root {
+            --soft-pink: #fdf2f2;
+            --accent-pink: #f8bbd0;
+            --text-brown: #5d4037;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            background-color: var(--soft-pink);
+            color: var(--text-brown);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* 透明卡片樣式 */
+        .card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .photo-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .btn-donate {
+            background-color: var(--accent-pink);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .btn-donate:hover {
+            background-color: #f48fb1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>浪愛延續：街角攝影展</h1>
+        <p>用鏡頭記錄生命，用物資延續溫暖</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="photo-placeholder">霓霓的午後</div>
+            <h3>霓霓 (原名：白白)</h3>
+            <p>安靜的小女生，最喜歡在公園長椅下曬太陽。</p>
+            <a href="donation.html" class="btn-donate">捐贈物質</a>
+        </div>
+
+        <div class="card">
+            <div class="photo-placeholder">霓霓的夥伴</div>
+            <h3>霓霓 (原名：灰灰)</h3>
+            <p>充滿好奇心，雖然害羞但對零食沒有抵抗力。</p>
+            <a href="donation.html" class="btn-donate">捐贈物質</a>
+        </div>
+
+        <div class="card">
+            <div class="photo-placeholder">街角故事</div>
+            <h3>小橘</h3>
+            <p>這區的守護者，總是以穩重的腳步巡視領地。</p>
+            <a href="donation.html" class="btn-donate">捐贈物質</a>
+        </div>
+    </div>
+
+</body>
+</html>
